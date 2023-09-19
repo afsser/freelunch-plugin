@@ -53,25 +53,123 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          NOMO Demo Plugin - Get started by editing src/app/page.tsx. Scroll
-          down to explore features of NOMO-plugins!
-        </p>
-      </div>
-
-      <div className={styles.flex}>
-        <Dialog content={dialog} handleClose={() => setDialog(null)} />
-        <div style={{ height: "10px" }} />
-        <Image
-          className={styles.logo}
-          src="/nomo-logo-square.jpg"
-          alt="NOMO Logo"
-          width={180}
-          height={37}
+      <div className={styles.center}>
+      <Image
+          src="/logo-only.png"
+          alt="Freelunch Logo"
+          width={130}
+          height={130}
           priority
         />
-        <div style={{ height: "10px" }} />
+      </div>
+      <div className={styles.logo}>
+        <p>
+          FreeLunch
+        </p>
+      </div>
+      <div className={styles.description}>
+        <p>
+          Your descentralized freelance platform
+        </p>
+      </div>
+      {/* <div className={styles.description}>
+        <p>
+          Seal Smart Contracts
+        </p>
+      </div>
+      <div className={styles.description}>
+        <p>
+          Get paid in cryptocurrency
+        </p>
+      </div> */}
+
+      <div className={styles.flex}>
+      <div className={styles.card}>
+          <h2
+            onClick={() => {
+              nomo
+                .signEvmMessage({
+                  message: "this message comes from my wallet",
+                })
+                .then((res) => {
+                  openDialog({
+                    title: "Message was signed!",
+                    content: JSON.stringify(res),
+                  });
+                })
+                .catch((e) => {
+                  console.error(e);
+                  openDialog({
+                    title: "signEvmMessage failed",
+                    content: JSON.stringify(e),
+                  });
+                });
+            }}
+          >
+            Manage Profile<span>-&gt;</span>
+          </h2>
+          <p>
+            Add portfolio, specializations and other informations.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h2
+            onClick={() => {
+              nomo
+                .signEvmMessage({
+                  message: "this message comes from my wallet",
+                })
+                .then((res) => {
+                  openDialog({
+                    title: "Message was signed!",
+                    content: JSON.stringify(res),
+                  });
+                })
+                .catch((e) => {
+                  console.error(e);
+                  openDialog({
+                    title: "signEvmMessage failed",
+                    content: JSON.stringify(e),
+                  });
+                });
+            }}
+          >
+            Propose a contract<span>-&gt;</span>
+          </h2>
+          <p>
+            Create a freelance job offer.
+          </p>
+        </div>
+        <div className={styles.card}>
+          <h2
+            onClick={() => {
+              nomo
+                .signEvmMessage({
+                  message: "this message comes from my wallet",
+                })
+                .then((res) => {
+                  openDialog({
+                    title: "Message was signed!",
+                    content: JSON.stringify(res),
+                  });
+                })
+                .catch((e) => {
+                  console.error(e);
+                  openDialog({
+                    title: "signEvmMessage failed",
+                    content: JSON.stringify(e),
+                  });
+                });
+            }}
+          >
+            Search<span>-&gt;</span>
+          </h2>
+          <p>
+            Find the perfect worker or job for you.
+          </p>
+        </div>
+      {/* <div style={{ height: "20px" }} />
+        <Dialog content={dialog} handleClose={() => setDialog(null)} />
         <div style={{ width: "100%" }}>
           <b>Platform info:</b> {JSON.stringify(platformInfo)}
         </div>
@@ -91,8 +189,8 @@ export default function Home() {
         <div style={{ height: "10px" }} />
         <div style={{ width: "100%" }}>
           <b>Device name:</b> {JSON.stringify(deviceName)}
-        </div>
-
+        </div> */}
+        <div style={{ height: "30px" }} />
         <div className={styles.card}>
           <h2
             onClick={() => {
@@ -120,7 +218,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.card}>
+        {/* <div className={styles.card}>
           <h2
             onClick={() => {
               nomo
@@ -186,7 +284,7 @@ export default function Home() {
           ></img>
         ) : (
           <div>Your gallery image will be shown here</div>
-        )}
+        )} */}
 
         <div className={styles.card}>
           <h2

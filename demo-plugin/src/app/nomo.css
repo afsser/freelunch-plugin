@@ -1,4 +1,4 @@
 /* The css variables that are prefixed with "nomo" adjust themselves according to the current Nomo theme */
 html, body {
-  background: linear-gradient(to bottom right, white, var(--nomoBackground));
+  background: linear-gradient(to bottom right, rgba(8, 56, 104, 0.84), rgb(53, 25, 68));
 }

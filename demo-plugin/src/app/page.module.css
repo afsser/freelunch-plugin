@@ -6,11 +6,21 @@
   padding: 6rem;
 }
 
+.logo p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  font-size: 4.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
@@ -25,8 +35,11 @@
 }
 
 .description p {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
   position: relative;
-  margin: 0;
+  margin: 1rem;
   padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
@@ -37,6 +50,7 @@
   font-weight: 700;
   font-family: var(--font-mono);
 }
+
 
 .flex {
   display: flex;
@@ -79,14 +93,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
 }
 
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
-  height: 360px;
+  height: 180px;
   margin-left: -400px;
 }
 
@@ -106,9 +119,6 @@
   transform: translateZ(0);
 }
 
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -189,7 +199,7 @@
   }
 
   .description div {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
