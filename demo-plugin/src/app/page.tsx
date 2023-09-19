@@ -67,6 +67,12 @@ export default function Home() {
           FreeLunch
         </p>
       </div>
+      {/* <div className={styles.slogan}>
+        <p>
+          BECAUSE THERE'S NO LUNCH FOR FREE
+        </p>
+      </div>
+      <div style={{ height: "30px" }} /> */}
       <div className={styles.description}>
         <p>
           Your descentralized freelance platform
@@ -82,7 +88,7 @@ export default function Home() {
           Get paid in cryptocurrency
         </p>
       </div> */}
-
+      <div style={{ height: "30px" }} />
       <div className={styles.flex}>
       <div className={styles.card}>
           <h2
@@ -165,7 +171,7 @@ export default function Home() {
             Search<span>-&gt;</span>
           </h2>
           <p>
-            Find the perfect worker or job for you.
+          Discover the ideal freelancer or client for your needs.
           </p>
         </div>
       {/* <div style={{ height: "20px" }} />

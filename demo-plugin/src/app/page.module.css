@@ -11,10 +11,22 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-size: 4.5rem;
   font-family: "Ubuntu", sans-serif;
 }
+
+/* .slogan p{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 1rem 0;
+  padding-bottom: 2rem 0;
+  font-size: 1.3rem;
+  font-family: "Cooper Hewitt", sans-serif;
+} */
 
 .description {
   display: flex;
@@ -44,6 +56,7 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+  color: rgb(174, 210, 253);
 }
 
 .code {
